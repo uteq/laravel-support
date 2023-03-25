@@ -9,6 +9,3 @@ composer require uteq/laravel-support
 
 ### Macros
 https://github.com/uteq/laravel-query-builder-macros
-
-
-### Illuminate\Database\Query\Builder
