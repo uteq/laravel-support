@@ -1,0 +1,54 @@
+{
+  "name": "uteq/laravel-support",
+  "description": "A set of common Laravel Uteq helpers and macros",
+  "keywords": [
+    "uteq",
+    "laravel-support"
+  ],
+  "homepage": "https://github.com/uteq/laravel-support",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nathan Jansen",
+      "email": "info@nathanjansen.nl",
+      "homepage": "https://github.com/nathanjansen",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.71|^9.0|^10.0",
+    "uteq/query-builder-macros": "^1.0.0"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Uteq\\LaravelSupport\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Uteq\\LaravelSupport\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Uteq\\LaravelSupport\\LaravelSupportServiceProvider"
+      ],
+      "aliases": {
+        "LaravelSupport": "Uteq\\LaravelSupport\\Facades\\LaravelSupport"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
