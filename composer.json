@@ -24,12 +24,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Uteq\\LaravelSupport\\": "src/"
+      "Uteq\\Support\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Uteq\\LaravelSupport\\Tests\\": "tests/"
+      "Uteq\\Support\\Tests\\": "tests/"
     }
   },
   "config": {
@@ -42,10 +42,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Uteq\\LaravelSupport\\LaravelSupportServiceProvider"
+        "Uteq\\Support\\SupportServiceProvider"
       ],
       "aliases": {
-        "LaravelSupport": "Uteq\\LaravelSupport\\Facades\\LaravelSupport"
+        "Support": "Uteq\\Support\\Facades\\Support"
       }
     }
   },
